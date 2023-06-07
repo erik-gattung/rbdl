@@ -3,7 +3,9 @@ PROJECT (rbdl)
 
 find_package(cmake_modules REQUIRED)
 find_package(Eigen REQUIRED)
-find_package(catkin REQUIRED COMPONENTS urdf eigen_checks)
+find_package(catkin REQUIRED COMPONENTS urdf
+# eigen_checks
+)
 
 SET(CMAKE_CXX_FLAGS "-std=c++0x ${CMAKE_CXX_FLAGS}")
 
